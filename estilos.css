@@ -1,0 +1,245 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+    margin:0px;
+    background-color: rgb(44, 42, 42);
+    
+}
+
+
+#badge{
+
+    
+
+}
+
+.badge{
+    font-size: 10px;
+    
+}
+
+
+
+
+
+
+#logo{
+    height: 90px;
+    margin-right: 40px;
+    transition-property: all;
+    transition-duration: 200ms;
+}
+
+#logo:hover{
+    transform: scale(1.1 , 1.1);
+    
+}
+
+.z-index{
+	z-index: 1; /* acá quise usar el z-index pero no noto cambios, no se si lo estoy usando bien*/
+}
+
+#link_header{
+    color: white;
+    font-style: bold;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 5px;
+    
+    
+    
+    
+    
+}
+
+.portada {
+    margin-top: 0px;
+    margin-right: 0%;
+    height:350px;
+    background-image: url("D:/Juan facultad/carrera Desarrollo ux_ui CODER HOUSE/desarrollo web/Clase 8/trabajos/animaciones/imagenes/portada.jpg");
+    animation-name: portada ;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+@keyframes portada{
+    0% {background-image: url("D:/Juan facultad/carrera Desarrollo ux_ui CODER HOUSE/desarrollo web/Clase 8/trabajos/animaciones/imagenes/portada.jpg");}
+    50% {background-image: url("D:/Juan facultad/carrera Desarrollo ux_ui CODER HOUSE/desarrollo web/Clase 8/trabajos/animaciones/imagenes/portada2.jpg");}
+    100% {background-image: url("D:/Juan facultad/carrera Desarrollo ux_ui CODER HOUSE/desarrollo web/Clase 8/trabajos/animaciones/imagenes/portada.jpg");}
+}
+
+/*.imagen_portada{
+    width: 100vw;
+    animation-name: portada ;
+    animation-iteration-count: infinite;*/
+
+    
+
+
+h1{
+    color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    margin-top: 5px;
+    text-align: center;
+}
+
+h2{
+    color: rgb(214, 211, 23);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+.gorras{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+
+
+.gorras__item{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    transition-property: all;
+    transition-duration: 200ms;
+    background-color: floralwhite;
+    border-radius: 9px;
+}
+
+.gorras__item:hover{
+
+    transform: scale(1.3 , 1.3);
+}
+
+.beanies{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+
+
+.beanies__item{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    transition-property: all;
+    transition-duration: 200ms;
+    background-color: floralwhite;
+    border-radius: 9px;
+}
+
+.beanies__item:hover{
+
+    transform: scale(1.3 , 1.3);
+}
+
+.titulos_cards{
+    margin-bottom: 2px;
+    margin-left: 6px;
+}
+
+.descripcion_cards{
+    font-size: 12px;
+    margin-top: 0px;
+    margin-left: 6px;
+    
+}
+
+
+
+.cta_cards{
+    
+    background-color: #0FA5AD ;
+    width: 30px;
+    color: white;
+    text-decoration: none;
+    font-style: bold;
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    
+    
+}
+
+.iframes_grid{
+
+    width: 100vw;
+    display: grid;
+    grid-template-columns: minmax(auto 300px) minmax(auto 300px) minmax(auto 300px) ;
+    justify-items: start;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-areas: "video_promo promo2";
+    justify-content: start;     
+    
+}
+
+
+.video_iframe{
+    grid-area: video_promo;
+}
+
+.facebook_liquidacion{
+    grid-area: promo1;
+}
+
+.facebook_beanies_panal{
+    grid-area: promo2;
+}
+
+.form__modal{
+    color: black;
+}
+
+.form__inputs{
+    color: white;
+}
+
+.form_margin {
+
+    margin-top: 100px;
+}
+
+#form_c {
+    background-color: #0FA5AD ;
+    width: 100vw;
+    color: white;
+    text-align: left;
+    
+}
+
+#items_form {
+    margin-left: 500px;
+    margin-top: 5px;
+
+    
+
+}
+
+.row{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.texto__parrafo{
+    color: white;
+}
+
+.footer{
+    width: 100vw;
+    height: 100px;
+    background-color: dimgray;
+    margin-top: 20px;
+}
+
+

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="es"> 
+
+	<head>
+		<meta charset="UTF-8" />
+		<title> Memphis-Contacto </title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+		<link href="estilos.css" rel="stylesheet" /> 
+
+	</head>
+
+	<body>
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="navbar__container container-fluid">
+          
+          <a class="navbar__brand" href="index.html"> <img id="logo" src="imagenes/logo.png"> </a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar__list navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="navbar__item nav-item">
+                <a class="navbar__link nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="navbar__item nav-item">
+                <a class="navbar__link nav-link active" href="productos.html">Productos <span id="badge" class="badge bg-danger  ">NEW</span> </a>
+              </li>
+              <li class="navbar__item nav-item">
+                <a class="navbar__link nav-link active" href="contacto.html" >Contacto</a>
+              </li>
+              <li class="navbar__item nav-item">
+                <a class="navbar__link nav-link active" href="sobre_nosotros.html" >Sobre nosotros </a>
+              </li>
+            </ul>
+            <form class="navbar__form d-flex">
+              <input class="navbar__search form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="navbar_searchbtn btn btn-outline-light" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+
+         
+
+        <section class="form">
+            <h2> Contacto </h2>
+
+            <form class="form__inputs row g-3 needs-validation" novalidate>
+              <div class="col-md-4">
+                <label for="validationCustom01" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="validationCustom01" value="Nombre" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="form__inputs col-md-4">
+                <label for="validationCustom02" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="validationCustom02" value="Apellido" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="form__inputs col-md-4">
+                <label for="validationCustomUsername" class="form-label">Username</label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text" id="inputGroupPrepend">@</span>
+                  <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Please choose a username.
+                  </div>
+                </div>
+              </div>
+              <div class="form__inputs col-md-6">
+                <label for="validationCustom03" class="form-label">Pais</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+                <div class="invalid-feedback">
+                  Please provide a valid city.
+                </div>
+              </div>
+              <div class="form__inputs col-md-3">
+                <label for="validationCustom04" class="form-label">Provincia </label>
+                <select class="form-select" id="validationCustom04" required>
+                  <option selected disabled value="">Choose...</option>
+                  <option>San Juan</option>
+                  <option> Mendoza </option>
+                  <option>San Luis</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid state.
+                </div>
+              </div>
+              <div class="form__inputs col-md-3">
+                <label for="validationCustom05" class="form-label">CP</label>
+                <input type="text" class="form-control" id="validationCustom05" required>
+                <div class="invalid-feedback">
+                  Please provide a valid zip.
+                </div>
+              </div>
+              <div class="form__inputs col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                  <label class="form-check-label" for="invalidCheck">
+                    Acepto los terminos y condiciones.
+                  </label>
+                  <div class="invalid-feedback">
+                    You must agree before submitting.
+                  </div>
+                </div>
+              </div>
+              <div class="form__enviar col-12">
+                <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Enviar
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="form__modal modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          ...
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+              
+            </form>
+        </section>
+
+        <footer class="footer">
+
+        </footer>
+     
+        
+        <script src="js/bootstrap.min.js" > </script>
+            
+
+	</body>
+
+</html>
